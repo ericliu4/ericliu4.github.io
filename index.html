@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Eric Liu — Personal Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/7544a54ebe.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://unpkg.com/@coreui/icons/css/all.min.css">
+</head>
+<body>
+  <!-- HEADER NAVBAR -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">Eric Liu</a>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#introduction">Introduction</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- Animated background (fades out on scroll) -->
+  <div class="background" aria-hidden="true"></div>
+
+  <!-- HERO -->
+  <main class="hero">
+    <h1><span class="gradient">Eric Liu</span></h1>
+    <p class="subtitle">Quantitative Trading Developer @ Scotiabank</p>
+    <p class="subtitle">Computer Engineering @ University of Toronto</p>
+
+    <div class="buttons">
+      <a href="#introduction" class="btn secondary">Introduction</a>
+    </div>
+
+    <div class="socials">
+      <a href="https://leetcode.com/eric7liu562/" target="_blank" aria-label="LeetCode"><i class="cib-leetcode"></i></i></a>
+      <a href="https://github.com/ericliu4" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/ericliu7/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="mailto:ey.liu@mail.utoronto.ca" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+  </main>
+
+  <!-- Introduction and Skills -->
+  <section id="introduction" class="about">
+    <div class="container">
+      <div class="about-content">
+        
+        <!-- Left: Profile + About -->
+        <div class="about-left">
+          <div class="about-header">
+            <img src="images/profile.jpg" alt="Eric Liu" class="profile-pic" />
+            <h2 class="gradient-text">Hello, I’m Eric Liu</h2>
+            <p class="tagline">Code. Data. Engineering.</p>
+          </div>
+
+          <p>
+            I’m a Computer Engineering student at the University of Toronto and a Quantitative Trading Developer at Scotiabank. 
+            My passion lies at the crossroads of <span class="highlight">software engineering</span> and 
+            <span class="highlight">quantitative finance</span> — where logic meets data and innovation drives decision-making. 
+            I love building intelligent systems, optimizing algorithms, and exploring how technology transforms global markets.
+          </p>
+        </div>
+
+        <!-- Right: Skills + Achievements -->
+        <div class="about-right">
+          <h2 class="section-heading">Skills</h2>
+          <ul class="skills-list">
+            <li><strong>Languages:</strong> Python, C++, Java, JavaScript, SQL, MongoDB</li>
+            <li><strong>Frameworks:</strong> Angular, Node.js, Django, HTML/CSS</li>
+            <li><strong>Data Tools:</strong> NumPy, Pandas, CVXPY, PyTorch</li>
+            <li><strong>Concepts:</strong> Algorithms, Machine Learning, Quantitative Finance, Optimization</li>
+          </ul>
+
+          <h2 class="section-heading">Achievements</h2>
+          <ul class="skills-list">
+            <li><strong>OEC:</strong> 85/100 - Representing the University of Toronto</li>
+            <li><strong>LeetCode:</strong> 1600+ Problems Solved, 1700+ Rating, Top 4k Global</li>
+            <li><strong>UTEK:</strong> 1st Place in Programming Competition</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="experience">
+    <div class="animated-bg"></div>
+    <div class="container">
+      <h2 class="section-title">Experience</h2>
+
+      <div class="experience-list">
+
+        <div class="experience-item">
+          <h3>Scotiabank – Quantitative Trading Developer</h3>
+          <p class="subheading">Electronic Execution Services (Algorithmic Trading) – Global Banking and Markets | May 2025 – Apr 2026 | Toronto, ON</p>
+          <p class="tech">Tech Environment: Bloomberg API, Transaction Cost Analysis, SQL, Python, Angular, JavaScript, Pandas</p>
+          <ul>
+            <li>Completed the Outage App, a Bloomberg-integrated diagnostic platform to analyze failed algorithmic executions, compute refund adjustments, and reduce algorithmic risk through performance optimization using vectorization and bitmasking.</li>
+            <li>Investigated and resolved missing trade records in TCA pipelines, refactoring logic to improve data integrity and compliance.</li>
+            <li>Maintained FX and Commission reconciliation pipelines, collaborating with traders and middle office to ensure accuracy.</li>
+            <li>Developed automated client reporting tools, improving operational efficiency and transparency.</li>
+          </ul>
+        </div>
+
+        <div class="experience-item">
+          <h3>Big Tuna – Software Developer</h3>
+          <p class="subheading">Seasonal Game Developer | Aug 2020 – May 2024 | Oakville, ON</p>
+          <p class="tech">Tech Environment: JavaScript, JSON, SQL, Developer Portal, Game Design, Git, Software Testing</p>
+          <ul>
+            <li>Developed and maintained a Discord bot game with over 23,000 active players as part of a three-person team.</li>
+            <li>Integrated SQL database updates for new content and conducted comprehensive pre-deployment testing.</li>
+          </ul>
+        </div>
+
+        <div class="experience-item">
+          <h3>Market Making via Reinforcement Learning Research</h3>
+          <p class="subheading">Research Assistant under Professor Wei Xu | May 2023 – Aug 2024 | Toronto, ON</p>
+          <p class="tech">Tech Environment: Python, Stable Baselines (DDPG & DQN), Linux, Pandas, Gym, PyTorch</p>
+          <ul>
+            <li>Developed a profitable market-making agent for cryptocurrency exchanges using DDPG and DQN algorithms.</li>
+            <li>Built a simulated trading environment using 100M+ tradebook entries and a dynamic reward framework for adaptive learning.</li>
+          </ul>
+        </div>
+
+        <div class="experience-item">
+          <h3>University of Toronto Aerospace Design Team</h3>
+          <p class="subheading">Liquid Propulsion & Aerodynamics Division | Jul 2023 – Present | Toronto, ON</p>
+          <p class="tech">Tech Environment: Python, Linux, NumPy, RocketCEA, Git, Project Management</p>
+          <ul>
+            <li>Reworking simulation software to model rocket flight trajectories with a new 6DoF (six degrees of freedom) system.</li>
+            <li>Improved accuracy and visualization for aerodynamic and propulsion analysis tools.</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+    
+  <section id="resume" class="resume">
+    <div class="animated-bg"></div>
+    <div class="container">
+      <h2 class="section-title">Resume</h2>
+
+      <div class="resume-content">
+        <div class="resume-card">
+
+          <div class="resume-buttons">
+            <!-- Update the href links below with your actual file paths -->
+            <a href="documents/EricLiu_resume.pdf" target="_blank" class="resume-btn primary">
+              <i class="fa-solid fa-eye"></i> View Resume
+            </a>
+            <a href="documents/EricLiu_resume.pdf" download class="resume-btn secondary">
+              <i class="fa-solid fa-download"></i> Download PDF
+            </a>
+            <iframe src="documents/EricLiu_resume.pdf" width="100%" height="600px" class="resume-preview"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>
+        I’m always open to discussing new projects, opportunities, or collaborations.
+        Feel free to reach out through any of the links below.
+      </p>
+
+      <div class="contact-buttons">
+        <a href="mailto:ey.liu@mail.utoronto.ca" class="contact-btn email">Email Me</a>
+        <a href="https://www.linkedin.com/in/ericliu7/" target="_blank" class="contact-btn linkedin">LinkedIn</a>
+        <a href="https://github.com/ericliu4" target="_blank" class="contact-btn github">GitHub</a>
+        <a href="https://leetcode.com/eric7liu562/" target="_blank" class="contact-btn custom">LeetCode</a>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
